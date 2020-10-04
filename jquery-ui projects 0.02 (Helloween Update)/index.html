@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Happy Helloween</title>
+  <link rel="stylesheet" href="jquery-ui.min.css">
+  <script src="jquery-3.4.1.min.js"></script>
+  <script src="jquery-ui.js"></script>
+  <style>
+    #dialog{font-family: cursive; font-size: xx-large; font-weight: bolder;}
+    #drag { width: 150px; height: 150px; padding: 0.5em; background-color: rgb(255, 120, 30); color: rgb(255, 238, 0); font-family:cursive; font-size:xx-large;font-weight:bolder; float: left; margin: 0 10px 10px 0;}
+    </style>
+  <script>
+   $( function() {
+    $( "#drag" ).draggable({cursor: "move", cursorAt: { top: 56, left: 56 },revert:false,});
+    $("#drag").resizable({
+        animate:false
+    });
+  } );
+  </script>
+</head>
+<body>
+ <div id="dialog" title="Basic dialog">
+	<p>Happy Helloween Everybody!!!</p>
+</div>
+<div id="drag"class="ui-widget-content">Happy Helloween</div>
+ 
+ 
+</body>
+</html>
