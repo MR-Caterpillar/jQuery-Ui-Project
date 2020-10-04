@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Draggable Element</title>
+  <link rel="stylesheet" href="jquery-ui.min.css">
+  <script src="jquery-3.4.1.min.js"></script>
+  <script src="jquery-ui.js"></script>
+  <style>
+    #drag { width: 150px; height: 150px; padding: 0.5em; background-color: dodgerblue; color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;float: left; margin: 0 10px 10px 0;}
+    </style>
+  <script>
+   $( function() {
+    $( "#drag" ).draggable({cursor: "move", cursorAt: { top: 56, left: 56 },revert:true,});
+    $("#drag").resizable({
+        animate:true
+    });
+  } );
+  </script>
+</head>
+<body>
+ 
+<div id="drag"class="ui-widget-content">Drag It Or Scale It</div>
+ 
+ 
+</body>
+</html>
